@@ -1,9 +1,10 @@
 const express = require('express');
+const querystring = require('querystring'); 
 const { redirect } = require('express/lib/response');
 const app = express()
 var morgan     = require('morgan');
 
-var port     = process.env.PORT || 8080;
+var port     = process.env.PORT || 5000;
 
 // configure app
 app.use(morgan('dev'));
@@ -12,8 +13,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/oauth2/authorize', (req, res) => {
-    const redirect_uri = req.body.redirect_uri;
-    res.redirect(redirect_uri);
+    const state = req.query.state;
+    const redirect_uri = req.query.redirect_uri;
+    console.log(redirect_uri + " and " + state);
+    const query = querystring.stringify({
+        "code": "alphabetathetaa",
+        "state": state
+    });
+    res.redirect(redirect_uri+ '/?' + query);
 })
 
 app.get('/oauth2/token', (req, res) => {
