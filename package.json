@@ -5,15 +5,17 @@
   "main": "index.js",
   "engines": {
     "node": "16.14.2",
-    "npm": "8.6.0" 
+    "npm": "8.6.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
   }
 }
