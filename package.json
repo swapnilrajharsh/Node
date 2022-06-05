@@ -14,8 +14,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.1",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "int-encoder": "^1.1.1",
+    "mongoose": "^6.2.9",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.15"
+    "mqtt": "^4.3.7",
+    "node-localstorage": "^2.2.1",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
   }
 }

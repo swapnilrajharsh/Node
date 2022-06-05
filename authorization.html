@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        div {
+          width: 50%;
+          margin-left : 25%
+        }
+    </style>
+    <head></head>
+    <body>
+        <!-- <h1 id="name">
+            Hello
+        </h1> -->
+        <div class="style=display: flex;">
+            <h2 id="name">
+                Hello
+            </h2>
+            <button onclick="myFunction()">Log Out</button>
+            <p>
+                Allow IFTTT to access your data
+            </p>
+            <button onclick="authorizeifttt()">Ok</button>
+            <button onclick="myFunction()">Cancel</button>
+        </div>
+        
+        <script>
+            const username = localStorage.getItem("token");
+            if(username != null) {
+                document.getElementById("name").innerHTML += username;
+            }
+            
+            function myFunction(event) {
+                localStorage.clear();
+                window.location="http://localhost:5000/login"
+            }
+            
+            async function authorizeifttt(event) {
+                const username = localStorage.getItem("token");
+                const result = await fetch('/fetchauthcode', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username
+                })
+                }).then((res) => res.json())
+        
+                if (result.status === 'ok') {
+                    console.log(result.data)
+                    const redirect_url_with_query = localStorage.getItem('redirect_url') + "?code=" + result.data + "&state=" + localStorage.getItem('state');
+                    window.location = redirect_url_with_query;
+                } else {
+                    alert(result.error)
+                }
+            }
+        </script>
+    </body>
+</html>

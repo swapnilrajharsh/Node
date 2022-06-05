@@ -1,0 +1,89 @@
+{
+    "rotation":[
+      {
+          "id":1,
+          "screenOrientation":"Potrait",
+          "device":"AlphaMobile",
+        "metaId":"14b9-apha-beta"
+      },
+      {
+          "id":1,
+          "screenOrientation":"Potrait",
+          "device":"AlphaMobile",
+        "metaId":"14b9-apha-beta"
+      },
+      {
+          "id":1,
+          "screenOrientation":"Potrait",
+          "device":"AlphaMobile",
+        "metaId":"14b9-apha-beta"
+      },
+      {
+          "id":2,
+          "screenOrientation":"Landscape",
+          "device":"AlphaMobile",
+        "metaId":"21ss-apha-beta"
+      },
+      {
+          "id":2,
+          "screenOrientation":"Landscape",
+          "device":"AlphaMobile",
+        "metaId":"21ss-apha-beta"
+      },
+      {
+          "id":2,
+          "screenOrientation":"Landscape",
+          "device":"AlphaMobile",
+          "metaId":"21ss-apha-beta"
+      },
+      {
+          "id":3,
+          "screenOrientation":"No Scape",
+          "device":"Beta",
+          "metaId":"14b9-baas-beta"
+      },
+      {
+        "id":3,
+        "screenOrientation":"No Scape",
+        "device":"Beta",
+        "metaId":"14b9-baas-beta"
+    },
+    {
+      "id":3,
+      "screenOrientation":"No Scape",
+      "device":"Beta",
+      "metaId":"14b9-baas-beta"
+    },
+    {
+      "id":4,
+      "screenOrientation":"Ndsdo Scape",
+      "device":"Betasd",
+      "metaId":"14b9-basddas-beta"
+    },
+    {
+      "id":5,
+      "screenOrientation":"das Scape",
+      "device":"sad",
+      "metaId":"ds-basddas-beta"
+    },
+    {
+      "id":6,
+      "screenOrientation":"das nmbbn",
+      "device":"nmnm",
+      "metaId":"ds-nmnm-beta"
+    },
+    {
+      "id":7,
+      "screenOrientation":"das sasa",
+      "device":"sdf",
+      "metaId":"ds-assa-beta"
+    },
+    {
+      "id":8,
+      "screenOrientation":"hgjhbb bm sasa",
+      "device":"jnkhjkjkj",
+      "metaId":"qqw-klluy-beta"
+    }
+    ]
+}
+  

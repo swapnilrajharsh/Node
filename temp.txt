@@ -1,0 +1,43 @@
+runAction("gmail.send_yourself_an_email", {fields: { body: "Orientation changed for " + Trigger.ingredients.device + " to " + Trigger.ingredients.screenOrientation }});
+
+1. User Sign Up => User Collection mei user is added => userdata mei user record created with
+empty choice number arrays
+
+{
+    data : "",
+
+    meta {
+        id : "",
+        timestamp : ""
+    },
+
+    created_at : ""
+}
+
+
+---------------------------------------------
+// await UserData.updateOne ( { userId }, 
+  //   {
+  //     $push : {choicenumber: data },
+  //     $pop: {choicenumber: -1}
+  //   }).exec();
+
+  // const thirdquery = await UserData.findOne( {userId})
+  // const daaa = thirdquery.choicenumber
+  //     daaa.forEach(element => {
+  //       console.log("==" + element)
+  //     });
+  // , { "choicenumber.4" : { $exists: true } }]
+  
+  // const firstQuery = 
+  // console.log("User Data : " + firstQuery.userId + " " + firstQuery.choicenumber.length)
+      //[ { $push: { choicenumber: data } },{ $pop: {choicenumber: -1} } ] )
+    // .then(() => {
+    //   console.log("DB updated as per the request of user");
+    // }).catch( err => {
+    //   console.log(err);
+    // })
+
+
+{ _id ,(username, password) }
+uid => authcode | authcode => uid | uid => accesstoken
